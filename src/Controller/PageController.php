@@ -13,6 +13,46 @@ class PageController extends AbstractController
     public function index(): Response
     {
         return $this->render('page/index.html.twig', [
+            'title' => 'paris',
+            'subtitle' => 'paris'
+        ]);
+    }
+
+    // Page d'accueil Las-Vegas
+    #[Route('/las-vegas', name: 'las-vegas')]
+    public function lasVegas(): Response
+    {
+        return $this->render('page/index.html.twig', [
+            'title' => 'las-vegas',
+            'subtitle' => 'las-vegas'
+        ]);
+    }
+    // Page d'accueil Kyoto
+    #[Route('/kyoto', name: 'kyoto')]
+    public function kyoto(): Response
+    {
+        return $this->render('page/index.html.twig', [
+            'title' => 'kyoto',
+            'subtitle' => '京都市'
+        ]);
+    }
+    // Page d'accueil Hong Kong
+    #[Route('/hong-kong', name: 'hong-kong')]
+    public function hongKong(): Response
+    {
+        return $this->render('page/index.html.twig', [
+            'title' => 'hong kong',
+            'subtitle' => '香港'
+        ]);
+    }
+
+    // Page d'accueil Sydney
+    #[Route('/sydney', name: 'sydney')]
+    public function sydney(): Response
+    {
+        return $this->render('page/index.html.twig', [
+            'title' => 'sydney',
+            'subtitle' => 'sydney'
         ]);
     }
     
