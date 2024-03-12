@@ -1,3 +1,20 @@
 body {
     background-color: skyblue;
 }
+
+:root {
+    --custom-main: #FE1F60;
+    --custom-secondary: #831ef8;
+    --custom-dark: #101010;
+}
+
+/* Titles & Fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 900;
+  }
+
+body {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+  }
