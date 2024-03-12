@@ -14,7 +14,8 @@ class PageController extends AbstractController
     {
         return $this->render('page/index.html.twig', [
             'title' => 'paris',
-            'subtitle' => 'paris'
+            'subtitle' => 'paris',
+            'background' => 'paris'
         ]);
     }
 
@@ -24,7 +25,8 @@ class PageController extends AbstractController
     {
         return $this->render('page/index.html.twig', [
             'title' => 'las-vegas',
-            'subtitle' => 'las-vegas'
+            'subtitle' => 'las-vegas',
+            'background' => 'lasvegas'
         ]);
     }
     // Page d'accueil Kyoto
@@ -33,7 +35,8 @@ class PageController extends AbstractController
     {
         return $this->render('page/index.html.twig', [
             'title' => 'kyoto',
-            'subtitle' => '京都市'
+            'subtitle' => '京都市',
+            'background' => 'kyoto'
         ]);
     }
     // Page d'accueil Hong Kong
@@ -42,7 +45,8 @@ class PageController extends AbstractController
     {
         return $this->render('page/index.html.twig', [
             'title' => 'hong kong',
-            'subtitle' => '香港'
+            'subtitle' => '香港',
+            'background' => 'hongkong'
         ]);
     }
 
@@ -52,7 +56,8 @@ class PageController extends AbstractController
     {
         return $this->render('page/index.html.twig', [
             'title' => 'sydney',
-            'subtitle' => 'sydney'
+            'subtitle' => 'sydney',
+            'background' => 'sydney'
         ]);
     }
     
