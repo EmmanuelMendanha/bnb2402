@@ -26,7 +26,9 @@ class AppFixtures extends Fixture
             ->setPhone($faker->phoneNumber())
             ->setAddress($faker->address())
             ->setCity($faker->city())
-            ->setCountry($faker->country());
+            ->setCountry($faker->country())
+            ->setImage('default-1.jpg')
+            ;
         $manager->persist($admin);
 
         // Création de 10 Voyageurs
@@ -42,7 +44,8 @@ class AppFixtures extends Fixture
                 ->setPhone($faker->phoneNumber())
                 ->setAddress($faker->address())
                 ->setCity($faker->city())
-                ->setCountry($faker->country());
+                ->setCountry($faker->country())
+                ->setImage('default-1.jpg');
 
             array_push($voyagerArray, $voyager);
             $manager->persist($voyager);
@@ -60,7 +63,8 @@ class AppFixtures extends Fixture
                 ->setPhone($faker->phoneNumber())
                 ->setAddress($faker->address())
                 ->setCity($faker->city())
-                ->setCountry($faker->country());
+                ->setCountry($faker->country())
+                ->setImage('default-2.jpg');
 
             array_push($hostArray, $host);
             $manager->persist($host);
